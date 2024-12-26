@@ -25,12 +25,16 @@ export const Employee = () => {
 
     //  1,2,3,4,5 <= 5 all true
     const handlePrevious = () => {
+        if (currentPage === 1 )return;
+        
         if (currentPage <= totalPages) { // 
             setCurrentPage(currentPage - 1);
         }
     }
     // //  1,2,3,4 < 5 all true
     const handleNext = () => {
+        if (currentPage === totalPages) return;
+
         if (currentPage < totalPages) {
             setCurrentPage(currentPage + 1);
         }
@@ -72,9 +76,9 @@ export const Employee = () => {
                 </tbody>
             </table>
             <div className={styles.buttonContainer}>
-                <button disabled={currentPage === 1} onClick={handlePrevious} className={styles.button}>Previous</button>
+                <button  onClick={handlePrevious} className={styles.button}>Previous</button>
                 <div className={styles.pageNum}>{currentPage}</div>
-                <button disabled={currentPage === totalPages} onClick={handleNext} className={styles.button}>Next</button>
+                <button onClick={handleNext} className={styles.button}>Next</button>
             </div>
 
         </div>

@@ -1,3 +1,8 @@
+.heading {
+    display: flex;
+    justify-content:center ;
+}
+
 .columnHeading {
     color: #FFFFFF;
     background-color: green;
@@ -40,6 +45,7 @@
     background-color: green;
     width: 30px;
     height: 30px;
+    font-weight: 600;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
