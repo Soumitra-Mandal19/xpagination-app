@@ -13,7 +13,7 @@ export const Employee = () => {
                 const employeesData = await fetchData();
                 setEmployees(employeesData);
             } catch (error) {
-                console.error('failed to fetch data', error.message)
+               alert('failed to fetch data', error.message);
             }
         }
         getData();
@@ -48,6 +48,7 @@ export const Employee = () => {
 
     return (
         <div>
+            <div className={styles.heading}><h1>Employee Data Table</h1></div>
             <table className={styles.table}>
                 <thead className={styles.columnHeading}>
                     <tr>
