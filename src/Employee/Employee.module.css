@@ -1,0 +1,47 @@
+.columnHeading {
+    color: #FFFFFF;
+    background-color: green;
+    width: 100%;
+    text-align: left;
+}
+
+.table {
+    width: 100%; 
+    height: 500px;
+    border-bottom: 1px solid green;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    
+}
+
+.row {
+    border-bottom: 1px solid grey;
+    background-color: whitesmoke;
+}
+
+.buttonContainer {
+    padding-top: 20px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items:center ;
+}
+    
+.button {
+    background-color: green;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pageNum {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
